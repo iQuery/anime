@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../css/main.css"/>
+    <script type="text/javascript" src="../js/anime.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+
+
+        $(function () {
+
+        })
+
+    </script>
+    <style type="text/css">
+        .svgImg{
+            width: 100%;
+
+        }
+        #animateLine1 , #animateLine2{
+            stroke-dasharray:100 1700;
+            animation: dash 15s linear infinite;
+        }
+        #animateLine3{
+            stroke-dasharray:200 700;
+            animation: dash 15s linear infinite;
+        }
+        #animateLine4{
+            stroke-dasharray:200 1600 200 1600 100 1700;
+            animation: dash 10s linear infinite;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: -5400;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<svg width="1280" height="960" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+    <g>
+        <title>Layer 1</title>
+        <polyline  points="900 200,700 200,600 150,100 150" style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"/>
+        <polyline  points="900 200,700 200,670 185,630 210,550 210" style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"/>
+        <polyline id="animateLine1"  points="900 200,700 200,600 150" style="fill:none;stroke: #fcfcfc;stroke-width:5"/>
+        <polyline id="animateLine2"  points="900 200,700 200,670 185,630 210,550 210" style="fill:none;stroke: #fcfcfc; stroke-width:5"/>
+
+        <ellipse stroke="#000000" ry="3" rx="3" cy="150" cx="600" style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="5" rx="5" cy="150" cx="100" style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="3" rx="3" cy="210" cx="630" style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="5" rx="5" cy="210" cx="550" style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+
+        <polyline  points="920 310,820 250,350 250" style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"/>
+        <polyline  points="970 310,500 310" style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"/>
+        <polyline id="animateLine3" points="970 310,500 310" style="fill:none;stroke: #fcfcfc;stroke-width:5"/>
+        <polyline  points="870 310,770 370,300 370" style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"/>
+        <polyline id="animateLine4" points="870 310,770 370,300 370" style="fill:none;stroke: #fcfcfc;stroke-width:5"/>
+
+
+        <ellipse stroke="#000000" ry="4" rx="4" cx="920" cy="310" style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="3" rx="3" cx="870" cy="310" style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="5" rx="5" cx="346" cy="250"  style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="5" rx="5" cx="496" cy="310"  style="fill:none;stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+        <ellipse stroke="#000000" ry="5" rx="5" cx="300" cy="370"  style="fill:rgb(173,171,164);stroke:rgba(255,251,238,0.6);stroke-width:2"></ellipse>
+
+        <line stroke-width="2" id="svg_8" y2="85.632792" x2="332.623479" y1="85.632792" x1="245.375102" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#f45" fill="none"/>
+        <line stroke="#000000" stroke-width="2" id="svg_9" y2="67.03483" x2="216.414682" y1="67.03483" x1="82.234307" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none"/>
+        <line stroke-width="2" stroke="#000000" id="svg_10" y2="85.814198" x2="246.145495" y1="66.856856" x1="215.33981" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="none"/>
+        <path id="svg_24" stroke="#FFFFFF" transform="rotate(180 67.89863586425781,67.14164733886719) " d="m63.620487,62.957484l6.41722,0l2.13907,4.18416l-2.13907,4.18417l-6.41722,0l2.13908,-4.18417l-2.13908,-4.18416z" stroke-linecap="null" stroke-linejoin="null" stroke-width="null" fill="#000000"/>
+        <line id="svg_31" y2="88.530848" x2="217.231496" y1="77.530848" x1="233.231496" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" fill="none"/>
+        <line id="svg_35" y2="88.297816" x2="150.025047" y1="88.297816" x1="218.0324" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" fill="none"/>
+        <polyline fill="none" stroke-width="5" stroke="#000000" points="183.94 88.3868 194.482 88.3294 205.024 88.272" id="svg_57"/>
+        <line stroke="#111111" id="svg_58" y2="63.24919" x2="150.058713" y1="63.24919" x1="208.613889" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" fill="none"/>
+        <ellipse ry="2.936645" rx="2.936645" id="svg_59" cy="66.927413" cx="80.350706" stroke-linecap="null" stroke-linejoin="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse stroke="#000000" id="svg_61" ry="2.097604" rx="2.135742" cy="67.409671" cx="215.672878" stroke-linecap="null" stroke-linejoin="null" stroke-width="null" fill="#000000"/>
+        <ellipse id="svg_62" stroke="#000000" ry="2.097604" rx="2.135742" cy="87.95771" cx="217.274681" stroke-linecap="null" stroke-linejoin="null" stroke-width="null" fill="#000000"/>
+        <ellipse id="svg_63" ry="2.936645" rx="2.936645" cy="88.220472" cx="148.582556" stroke-linecap="null" stroke-linejoin="null" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse ry="0.118652" rx="0.118652" id="svg_64" cy="63.304619" cx="152.143185" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse id="svg_65" ry="0.118652" rx="0.118652" cy="63.321093" cx="202.458132" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse id="svg_66" ry="0.118652" rx="0.118652" cy="63.321093" cx="202.458132" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse id="svg_67" ry="0.118652" rx="0.118652" cy="63.28355" cx="192.434326" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse id="svg_68" ry="0.118652" rx="0.118652" cy="63.358635" cx="182.110182" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse id="svg_69" ry="0.118652" rx="0.118652" cy="63.30348" cx="172.087767" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+        <ellipse id="svg_70" ry="0.118652" rx="0.118652" cy="63.30348" cx="162.245648" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="5,5" stroke-width="null" stroke="#000000" fill="#000000"/>
+    </g>
+</svg>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        var Block  = function (clazz) {
+            var Block = function (clazz) {
+                this.width = 100;
+                this.top = parseInt(Math.random()*400 + 200);
+                this.left = parseInt(400 + Math.random()*1000);
+                this.element = $("<div>");
+                var i =parseInt(Math.random()*4);
+                $(this.element).css("width", this.width + "px")
+                    .css("left", this.left + "px")
+                    .css("top", this.top + "px")
+                    .addClass(clazz)
+                    .addClass("block" + i)
+                this.element.appendTo($("body"));
+            }
+
+
+
+
+
+            return Block;
+        }();
+
+        $(function () {
+//           var div =  document.createElement("<div>");
+            for(var i = 0 ; i < 50; i++){
+                var clazz = "anime_" + i;
+                new  Block(clazz);
+
+                    anime({
+                        begin: function (el,t1,t2) {
+                            console.log(el);
+                        },
+                        update:function (anime) {
+                            if(this.progress < 40){
+                                $(this.animatables[0].target).hide();
+                            }else{
+                                $(this.animatables[0].target).show();
+                            }
+                            //anime
+                            //console.log(anime);
+                        },
+                        targets: "body ." + clazz,
+//                    targets: ".tch_img_left",
+                        translateX: [
+                            { value: -1000, duration: 3000,  opacity:0, elasticity: 0 }
+                        ],
+                        duration: 3000,
+                        delay: anime.random(0, 2000),
+                        opacity: function (el,t1,t2,t3,t4) {
+                            return t1;
+                        },
+                        loop: true,
+                        easing: [0.5,1,1,1]
+                    });
+
+
+            }
+
+
+        })
+
+    </script>
+
+</head>
+<body>
+
+<img src="img/3l.png" class="tch_img_left"/>
+<img src="img/2.png" class="tch_img"/>
+</body>
+</html>
