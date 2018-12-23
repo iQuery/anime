@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./Randerer.js"></script>
+
+    <!--<script type="module">-->
+        <!--import {Renderer} from './Randerer.js';-->
+        <!--let renderer = new Renderer();-->
+        <!--console.log(renderer.renameNode())-->
+    <!--</script>-->
+
+    <script type="text/javascript">
+        let x = 1;
+        let y = 2;
+        [x, y] = [y , x];
+        console.log(`x=${x}; y=${y};`);
+
+
+
+        let test = ({x=3} = {}) => x;
+        console.log(test({x:3333}), test())
+
+        let draw = {a: 123, b: 345, c: 45};
+        let [d] = [{a} = draw];
+        console.log(a);
+        console.log(d);
+
+
+        $.renderer.init("dddd");
+        $.renderer.draw();
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>
