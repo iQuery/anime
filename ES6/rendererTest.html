@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./RandererTest.js"></script>
+    <script type="text/javascript" src="./hammer.min.js"></script>
+
+    <!--<script type="module">-->
+        <!--import {Renderer} from './Randerer.js';-->
+        <!--let renderer = new Renderer();-->
+        <!--console.log(renderer.renameNode())-->
+    <!--</script>-->
+
+    <style type="text/css">
+        html, body{
+            margin: 0px;
+            height: 100%;
+        }
+        #canvas{
+            height: 100%;
+        }
+        #divCanvasList, #floorContainer{
+            position: absolute;
+        }
+
+        .divCar .car{
+            position: absolute;
+        }
+
+        .divCar .car img{
+            position: absolute;
+            width:100%;
+            height:100%;
+        }
+        .divCar .car span{
+            position: absolute;
+            text-align: center;
+            line-height: 1.2;
+            font-size:12px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: #fff 1px 0 0,#fff 0 1px 0,#fff -1px 0 0,#fff 0 -1px 0;
+        }
+        .divCar .car b{
+            letter-spacing:1px;
+        }
+        .divCar .online{
+            color:green;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="canvas">
+
+    </div>
+    <script type="text/javascript">
+        let x = 1;
+        let y = 2;
+        [x, y] = [y , x];
+        console.log(`x=${x}; y=${y};`);
+
+
+
+        let test = ({x=3} = {}) => x;
+        console.log(test({x:3333}), test())
+
+        let draw = {a: 123, b: 345, c: 45};
+        let [d] = [{a} = draw];
+        console.log(a);
+        console.log(d);
+
+
+        $.renderer.init("dddd","#canvas");
+        $.renderer.draw();
+
+    </script>
+</body>
+</html>
